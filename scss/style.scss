@@ -16,5 +16,11 @@ $lightGrayishBlue: hsl(210, 46%, 95%);
 /* End variables and mixins */
 
 body {
+  align-items: center;
+  background-color: $lightGrayishBlue;
+  display: flex;
   font-size: 13px;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
 }
