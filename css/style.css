@@ -276,6 +276,8 @@ body {
   fill: #48556a;
   height: 32px;
   justify-content: center;
+  position: relative;
+  top: 3px;
   width: 32px;
 }
 .card__content__user__share__button:hover {
@@ -346,8 +348,6 @@ body {
     visibility: hidden;
   }
   .card__content__user__share__button {
-    position: relative;
-    top: 3px;
     z-index: 100;
   }
 }
