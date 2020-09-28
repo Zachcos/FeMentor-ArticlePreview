@@ -28,6 +28,13 @@ body {
 .card {
   border-radius: 8px;
   border: 1px solid blue;
-  height: 260px;
+  height: 250px;
   width: 48%;
+  &__image {
+    background-image: url("../images/drawers.jpg");
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+    width: 40%;
+  }
 }
