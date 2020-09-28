@@ -27,14 +27,33 @@ body {
 
 .card {
   border-radius: 8px;
-  border: 1px solid blue;
-  height: 250px;
+  display: flex;
+  height: 260px;
   width: 48%;
   &__image {
     background-image: url("../images/drawers.jpg");
     background-size: cover;
     border-radius: 8px 0 0 8px;
     height: 100%;
-    width: 40%;
+    width: 38%;
+  }
+  &__content {
+    background-color: hsl(255, 100%, 100%);
+    border-radius: 0 8px 8px 0;
+    padding: 30px 35px 0;
+    width: 62%;
+    &--title {
+      @include font_bold;
+      color: $veryDarkGrayishBlue;
+      font-size: 1.2rem;
+      line-height: 1.75rem;
+      margin-bottom: 10px;
+      width: 90%;
+    }
+    &--copy {
+      @include font_med;
+      color: $desaturatedDarkBlue;
+      line-height: 1.25rem;
+    }
   }
 }

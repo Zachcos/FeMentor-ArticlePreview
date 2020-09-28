@@ -149,8 +149,8 @@ body {
 
 .card {
   border-radius: 8px;
-  border: 1px solid blue;
-  height: 250px;
+  display: flex;
+  height: 260px;
   width: 48%;
 }
 .card__image {
@@ -158,7 +158,28 @@ body {
   background-size: cover;
   border-radius: 8px 0 0 8px;
   height: 100%;
-  width: 40%;
+  width: 38%;
+}
+.card__content {
+  background-color: white;
+  border-radius: 0 8px 8px 0;
+  padding: 30px 35px 0;
+  width: 62%;
+}
+.card__content--title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: #48556a;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  margin-bottom: 10px;
+  width: 90%;
+}
+.card__content--copy {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  color: #6d7f97;
+  line-height: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
