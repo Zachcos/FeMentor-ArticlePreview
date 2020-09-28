@@ -233,6 +233,9 @@ body {
   transition: all 0.2s ease-out;
   visibility: hidden;
   width: 225px;
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(158, 175, 194, 0.4);
+  -moz-box-shadow: 0px 15px 20px 0px rgba(158, 175, 194, 0.4);
+  box-shadow: 0px 15px 20px 0px rgba(158, 175, 194, 0.4);
 }
 .card__content__user__share__panel::after {
   background: #48556a;
@@ -253,7 +256,8 @@ body {
   font-weight: 500;
   color: #9eafc2;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  font-size: 0.85rem;
 }
 .card__content__user__share__panel svg {
   cursor: pointer;
