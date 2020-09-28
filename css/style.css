@@ -229,5 +229,9 @@ body {
   background-color: #6d7f97;
   fill: #ecf2f8;
 }
+.card__content__user .active {
+  background-color: #6d7f97;
+  fill: #ecf2f8;
+}
 
 /*# sourceMappingURL=style.css.map */
