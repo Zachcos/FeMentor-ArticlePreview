@@ -137,11 +137,14 @@ table {
 
 /* Start variables and mixins */
 /* End variables and mixins */
+html {
+  font-size: 13px;
+}
+
 body {
   align-items: center;
   background-color: #ecf2f8;
   display: flex;
-  font-size: 13px;
   height: 100vh;
   justify-content: center;
   width: 100%;
@@ -150,28 +153,33 @@ body {
 .card {
   border-radius: 8px;
   display: flex;
-  height: 260px;
+  min-height: 265px;
   width: 48%;
+  min-width: 691px;
+  -webkit-box-shadow: 0px 15px 49px 0px rgba(158, 175, 194, 0.25);
+  -moz-box-shadow: 0px 15px 49px 0px rgba(158, 175, 194, 0.25);
+  box-shadow: 0px 15px 49px 0px rgba(158, 175, 194, 0.25);
 }
 .card__image {
   background-image: url("../images/drawers.jpg");
   background-size: cover;
   border-radius: 8px 0 0 8px;
   height: 100%;
-  width: 38%;
+  min-height: 265px;
+  width: 39%;
 }
 .card__content {
   background-color: white;
   border-radius: 0 8px 8px 0;
-  padding: 30px 35px 0;
-  width: 62%;
+  padding: 30px 40px 0;
+  width: 61%;
 }
 .card__content--title {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   color: #48556a;
-  font-size: 1.2rem;
-  line-height: 1.75rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   margin-bottom: 10px;
   width: 90%;
 }
@@ -179,7 +187,40 @@ body {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   color: #6d7f97;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+.card__content__user {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.card__content__user__avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+.card__content__user__details {
+  margin-left: 12px;
+}
+.card__content__user__details--author {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: #48556a;
+  margin-bottom: 6px;
+}
+.card__content__user__details--date {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  color: #9eafc2;
+  font-size: 0.9rem;
+}
+.card__content__user__share {
+  background: url("../images/icon-share.svg") no-repeat center center;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  height: 32px;
+  margin-left: auto;
+  width: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
