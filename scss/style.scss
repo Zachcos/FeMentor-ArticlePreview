@@ -1,1 +1,16 @@
 @import "reset";
+
+/* Start variables and mixins */
+$veryDarkGrayishBlue: hsl(217, 19%, 35%);
+$desaturatedDark Blue: hsl(214, 17%, 51%);
+$grayishBlue: hsl(212, 23%, 69%);
+$lightGrayishBlue: hsl(210, 46%, 95%);
+@mixin font_med {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+@mixin font_bold {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+/* End variables and mixins */
