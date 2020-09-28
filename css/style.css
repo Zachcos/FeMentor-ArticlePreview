@@ -137,5 +137,8 @@ table {
 
 /* Start variables and mixins */
 /* End variables and mixins */
+body {
+  font-size: 13px;
+}
 
 /*# sourceMappingURL=style.css.map */
