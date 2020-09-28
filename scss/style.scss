@@ -140,6 +140,7 @@ body {
           align-items: center;
           background-color: $lightGrayishBlue;
           border-radius: 50%;
+          cursor: pointer;
           display: flex;
           fill: $veryDarkGrayishBlue;
           height: 32px;
@@ -162,6 +163,7 @@ body {
 @media screen and (max-width: 805px) {
   .card {
     flex-direction: column;
+    max-width: 338px;
     min-width: 338px;
     width: 90%;
     &__image {
@@ -171,21 +173,55 @@ body {
     }
     &__content {
       border-radius: 0 0 8px 8px;
-      padding: 30px 40px 0;
+      padding: 30px 0 0;
       width: 100%;
       &--title {
         font-size: 1.2rem;
         line-height: 1.8rem;
+        padding: 0 40px;
         width: 100%;
       }
       &--copy {
         line-height: 1.5rem;
         margin-bottom: 30px;
+        padding: 0 40px;
       }
       &__user {
         align-items: center;
-        display: flex;
-        margin: 0 0 20px 0;
+        margin: 0 0 15px 0;
+        padding: 0 10%;
+        width: 100%;
+        &__avatar {
+          width: 60px;
+        }
+        &__details {
+          width: 100%;
+        }
+        &.active {
+          background: $veryDarkGrayishBlue;
+        }
+        &__share {
+          &__panel {
+            border-radius: 0 0 8px 8px;
+            height: 65px;
+            left: -272px;
+            padding: 20px 100px 20px 20px;
+            top: -14px;
+            width: 338px;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            z-index: 1;
+            &::after {
+              visibility: hidden;
+            }
+          }
+          &__button {
+            position: relative;
+            top: 3px;
+            z-index: 100;
+          }
+        }
       }
     }
   }
