@@ -89,11 +89,15 @@ body {
         margin-left: auto;
         position: relative;
         &__panel {
+          align-items: center;
           background: $veryDarkGrayishBlue;
           border-radius: 8px;
+          display: flex;
           height: 55px;
+          justify-content: space-around;
           left: -96px;
           opacity: 0;
+          padding: 20px;
           position: absolute;
           top: -80px;
           transition: all 0.2s ease-out;
@@ -102,17 +106,30 @@ body {
           &::after {
             background: $veryDarkGrayishBlue;
             content: " ";
-            display: block;
             height: 20px;
             left: 45%;
-            position: relative;
-            top: 44px;
+            position: absolute;
+            top: 82%;
             transform: rotateZ(45deg);
             width: 20px;
           }
           &.active {
             visibility: visible;
             opacity: 1;
+          }
+          p {
+            @include font_med;
+            color: $grayishBlue;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+          }
+          svg {
+            cursor: pointer;
+            fill: #fff;
+            transition: fill 0.2s ease-out;
+            &:hover {
+              fill: $grayishBlue;
+            }
           }
         }
         &__button {
