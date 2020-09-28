@@ -86,12 +86,19 @@ body {
         }
       }
       &__share {
-        background: url("../images/icon-share.svg") no-repeat center center;
+        align-items: center;
         background-color: $lightGrayishBlue;
         border-radius: 50%;
+        display: flex;
+        fill: $veryDarkGrayishBlue;
         height: 32px;
+        justify-content: center;
         margin-left: auto;
         width: 32px;
+        &:hover {
+          background-color: $desaturatedDarkBlue;
+          fill: $lightGrayishBlue;
+        }
       }
     }
   }

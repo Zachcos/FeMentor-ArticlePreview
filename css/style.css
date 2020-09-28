@@ -215,12 +215,19 @@ body {
   font-size: 0.9rem;
 }
 .card__content__user__share {
-  background: url("../images/icon-share.svg") no-repeat center center;
+  align-items: center;
   background-color: #ecf2f8;
   border-radius: 50%;
+  display: flex;
+  fill: #48556a;
   height: 32px;
+  justify-content: center;
   margin-left: auto;
   width: 32px;
+}
+.card__content__user__share:hover {
+  background-color: #6d7f97;
+  fill: #ecf2f8;
 }
 
 /*# sourceMappingURL=style.css.map */
